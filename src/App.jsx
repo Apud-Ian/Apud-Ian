@@ -1,12 +1,18 @@
+import ButtonMenu from "./components/ButtonMenu";
+import HeroSection from "./components/HeroSection"
+import LineMap from "./components/LineMap";
+
 function App() {
-
-
   return (
     <>
-      <div className='bg-[#222222] dark:bg-[#121212] w-screen h-full min-h-[1080px]  overflow-x-hidden p-2'>
+    <div className='overflow-x-hidden h-[1800px] bg-stone-50 dark:bg-black'>
+      <LineMap>
+          <HeroSection />
+      </LineMap>
+      <ButtonMenu />
       </div>
     </>
-  )
+  );
 }
 
-export default App
+export default App;
